@@ -1,0 +1,30 @@
+running egg_info
+creating ../build/stepper_controller/stepper_controller.egg-info
+writing ../build/stepper_controller/stepper_controller.egg-info/PKG-INFO
+writing dependency_links to ../build/stepper_controller/stepper_controller.egg-info/dependency_links.txt
+writing requirements to ../build/stepper_controller/stepper_controller.egg-info/requires.txt
+writing top-level names to ../build/stepper_controller/stepper_controller.egg-info/top_level.txt
+writing manifest file '../build/stepper_controller/stepper_controller.egg-info/SOURCES.txt'
+reading manifest file '../build/stepper_controller/stepper_controller.egg-info/SOURCES.txt'
+writing manifest file '../build/stepper_controller/stepper_controller.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/blinn/Rocketry/antenna-tracker/AntennaTrackerWS/build/stepper_controller/build
+creating /home/blinn/Rocketry/antenna-tracker/AntennaTrackerWS/build/stepper_controller/build/lib
+creating /home/blinn/Rocketry/antenna-tracker/AntennaTrackerWS/build/stepper_controller/build/lib/stepper_controller
+copying stepper_controller/__init__.py -> /home/blinn/Rocketry/antenna-tracker/AntennaTrackerWS/build/stepper_controller/build/lib/stepper_controller
+running install
+running install_lib
+creating /home/blinn/Rocketry/antenna-tracker/AntennaTrackerWS/install/stepper_controller/lib/python3.12/site-packages/stepper_controller
+copying /home/blinn/Rocketry/antenna-tracker/AntennaTrackerWS/build/stepper_controller/build/lib/stepper_controller/__init__.py -> /home/blinn/Rocketry/antenna-tracker/AntennaTrackerWS/install/stepper_controller/lib/python3.12/site-packages/stepper_controller
+byte-compiling /home/blinn/Rocketry/antenna-tracker/AntennaTrackerWS/install/stepper_controller/lib/python3.12/site-packages/stepper_controller/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /home/blinn/Rocketry/antenna-tracker/AntennaTrackerWS/install/stepper_controller/share/ament_index
+creating /home/blinn/Rocketry/antenna-tracker/AntennaTrackerWS/install/stepper_controller/share/ament_index/resource_index
+creating /home/blinn/Rocketry/antenna-tracker/AntennaTrackerWS/install/stepper_controller/share/ament_index/resource_index/packages
+copying resource/stepper_controller -> /home/blinn/Rocketry/antenna-tracker/AntennaTrackerWS/install/stepper_controller/share/ament_index/resource_index/packages
+copying package.xml -> /home/blinn/Rocketry/antenna-tracker/AntennaTrackerWS/install/stepper_controller/share/stepper_controller
+running install_egg_info
+Copying ../build/stepper_controller/stepper_controller.egg-info to /home/blinn/Rocketry/antenna-tracker/AntennaTrackerWS/install/stepper_controller/lib/python3.12/site-packages/stepper_controller-0.0.0-py3.12.egg-info
+running install_scripts
+writing list of installed files to '/home/blinn/Rocketry/antenna-tracker/AntennaTrackerWS/build/stepper_controller/install.log'
