@@ -23,8 +23,6 @@ class stepperControllerNode(Node):
         setup_services(self) # runs all services
         setup_actions(self) # runs all actions
 
-        
-        
         self.stepper = stepperController(step_angle=1.8)
         
 class stepperController(Stepper):
