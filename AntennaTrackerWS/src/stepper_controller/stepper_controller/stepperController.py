@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 import rclpy
 from rclpy.node import Node
+from std_msgs.msg import String
+
+from stepper_controller.scripts import setup_services
+from stepper_controller.scripts import setup_actions
 
 from Phidget22.Phidget import *
 from Phidget22.Devices.Stepper import *
@@ -13,20 +17,13 @@ class stepperControllerNode(Node):
         self.get_logger().info("Ros2")
 
         # Publishers
-        self.position_pub = self.create_publisher(float, '/stepper/position', 10)
-        self.velocity_pub = self.create_publisher(float, '/stepper/velocity', 10)
-        self.acceleration_pub = self.create_publisher(float, '/stepper/acceleration', 10)
-        self.target_position_pub = self.create_publisher(float, '/stepper/target_position', 10)
-        self.is_moving_pub = self.create_publisher(float, '/stepper/is_moving', 10)
-        self.engaged_pub = self.create_publisher(float, '/stepper/engaged', 10)
-        self.error_pub = self.create_publisher(float, '/stepper/error_status', 10)
+        self.error_pub = self.create_publisher(String, '/stepper/error', 10)
+        self.is_moving_pub = self.create_publisher(bool, '/stepper/is_moving', 10)
+        
+        setup_services(self) # runs all services
+        setup_actions(self) # runs all actions
 
-        # Subscribers
-        self.set_velocity_sub = self.create_subscription(float, '/stepper/set_velocity', self.set_velocity_callback, 10)
-        self.set_acceleration_sub = self.create_subscription(float, '/stepper/set_acceleration', self.set_acceleration_callback, 10)
-        # Maybe this should be an action?
-        self.set_target_position_sub = self.create_subscription(float, '/stepper/set_target_position', self.set_target_position_callback, 10)
-        self.set_engaged_sub = self.create_subscription(float, '/stepper/set_engaged', self.set_engaged_callback, 10)
+        
         
         self.stepper = stepperController(step_angle=1.8)
         
@@ -52,7 +49,6 @@ class stepperController(Stepper):
         self.openWaitForAttachment(5000)  # Call the Stepper class's method directly
 
         # Attach event handlers
-        self.setOnErrorHandler(onError)
         self.setOnAttachHandler(self.onAttach)
         self.setOnDetachHandler(self.onDetach)
 
@@ -69,10 +65,6 @@ class stepperController(Stepper):
     # Event handler for when the stepper is detached
     def onDetach(self, self_instance):
         print("Stepper detached!")
-
-    def onError(self, code, description):
-        print("Code: " + str(code))
-        print("Description: " + str(description))
 
     # Close the connection when done
     def close(self):

@@ -1,0 +1,5 @@
+# request
+float64 acceleration
+---
+# response
+bool success

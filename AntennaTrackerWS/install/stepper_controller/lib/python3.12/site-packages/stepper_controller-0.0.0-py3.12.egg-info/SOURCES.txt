@@ -9,6 +9,9 @@ setup.py
 ../../build/stepper_controller/stepper_controller.egg-info/top_level.txt
 ../../build/stepper_controller/stepper_controller.egg-info/zip-safe
 resource/stepper_controller
+scripts/__init__.py
+scripts/stepper_actions.py
+scripts/stepper_services.py
 stepper_controller/__init__.py
 stepper_controller/stepperController.py
 test/test_copyright.py

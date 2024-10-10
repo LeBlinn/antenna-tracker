@@ -1,0 +1,30 @@
+[0.601s] Invoking command in '/home/blinn/Rocketry/antenna-tracker/AntennaTrackerWS/src/stepper_controller': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/blinn/Rocketry/antenna-tracker/AntennaTrackerWS/build/stepper_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/blinn/Rocketry/antenna-tracker/AntennaTrackerWS/install/stepper_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/stepper_controller build --build-base /home/blinn/Rocketry/antenna-tracker/AntennaTrackerWS/build/stepper_controller/build install --record /home/blinn/Rocketry/antenna-tracker/AntennaTrackerWS/build/stepper_controller/install.log --single-version-externally-managed install_data
+[0.809s] running egg_info
+[0.822s] writing ../../build/stepper_controller/stepper_controller.egg-info/PKG-INFO
+[0.822s] writing dependency_links to ../../build/stepper_controller/stepper_controller.egg-info/dependency_links.txt
+[0.822s] writing entry points to ../../build/stepper_controller/stepper_controller.egg-info/entry_points.txt
+[0.822s] writing requirements to ../../build/stepper_controller/stepper_controller.egg-info/requires.txt
+[0.822s] writing top-level names to ../../build/stepper_controller/stepper_controller.egg-info/top_level.txt
+[0.852s] reading manifest file '../../build/stepper_controller/stepper_controller.egg-info/SOURCES.txt'
+[0.853s] writing manifest file '../../build/stepper_controller/stepper_controller.egg-info/SOURCES.txt'
+[0.853s] running build
+[0.853s] running build_py
+[0.853s] copying scripts/__init__.py -> /home/blinn/Rocketry/antenna-tracker/AntennaTrackerWS/build/stepper_controller/build/lib/scripts
+[0.853s] copying scripts/stepper_services.py -> /home/blinn/Rocketry/antenna-tracker/AntennaTrackerWS/build/stepper_controller/build/lib/scripts
+[0.853s] copying stepper_controller/stepperController.py -> /home/blinn/Rocketry/antenna-tracker/AntennaTrackerWS/build/stepper_controller/build/lib/stepper_controller
+[0.853s] running install
+[0.859s] running install_lib
+[0.873s] copying /home/blinn/Rocketry/antenna-tracker/AntennaTrackerWS/build/stepper_controller/build/lib/scripts/__init__.py -> /home/blinn/Rocketry/antenna-tracker/AntennaTrackerWS/install/stepper_controller/lib/python3.12/site-packages/scripts
+[0.873s] copying /home/blinn/Rocketry/antenna-tracker/AntennaTrackerWS/build/stepper_controller/build/lib/scripts/stepper_services.py -> /home/blinn/Rocketry/antenna-tracker/AntennaTrackerWS/install/stepper_controller/lib/python3.12/site-packages/scripts
+[0.873s] copying /home/blinn/Rocketry/antenna-tracker/AntennaTrackerWS/build/stepper_controller/build/lib/stepper_controller/stepperController.py -> /home/blinn/Rocketry/antenna-tracker/AntennaTrackerWS/install/stepper_controller/lib/python3.12/site-packages/stepper_controller
+[0.874s] byte-compiling /home/blinn/Rocketry/antenna-tracker/AntennaTrackerWS/install/stepper_controller/lib/python3.12/site-packages/scripts/__init__.py to __init__.cpython-312.pyc
+[0.874s] byte-compiling /home/blinn/Rocketry/antenna-tracker/AntennaTrackerWS/install/stepper_controller/lib/python3.12/site-packages/scripts/stepper_services.py to stepper_services.cpython-312.pyc
+[0.874s] byte-compiling /home/blinn/Rocketry/antenna-tracker/AntennaTrackerWS/install/stepper_controller/lib/python3.12/site-packages/stepper_controller/stepperController.py to stepperController.cpython-312.pyc
+[0.875s] running install_data
+[0.875s] running install_egg_info
+[0.891s] removing '/home/blinn/Rocketry/antenna-tracker/AntennaTrackerWS/install/stepper_controller/lib/python3.12/site-packages/stepper_controller-0.0.0-py3.12.egg-info' (and everything under it)
+[0.895s] Copying ../../build/stepper_controller/stepper_controller.egg-info to /home/blinn/Rocketry/antenna-tracker/AntennaTrackerWS/install/stepper_controller/lib/python3.12/site-packages/stepper_controller-0.0.0-py3.12.egg-info
+[0.895s] running install_scripts
+[1.012s] Installing test_node script to /home/blinn/Rocketry/antenna-tracker/AntennaTrackerWS/install/stepper_controller/lib/stepper_controller
+[1.012s] writing list of installed files to '/home/blinn/Rocketry/antenna-tracker/AntennaTrackerWS/build/stepper_controller/install.log'
+[1.032s] Invoked command in '/home/blinn/Rocketry/antenna-tracker/AntennaTrackerWS/src/stepper_controller' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/blinn/Rocketry/antenna-tracker/AntennaTrackerWS/build/stepper_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/blinn/Rocketry/antenna-tracker/AntennaTrackerWS/install/stepper_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/stepper_controller build --build-base /home/blinn/Rocketry/antenna-tracker/AntennaTrackerWS/build/stepper_controller/build install --record /home/blinn/Rocketry/antenna-tracker/AntennaTrackerWS/build/stepper_controller/install.log --single-version-externally-managed install_data
